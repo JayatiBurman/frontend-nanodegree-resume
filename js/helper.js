@@ -18,8 +18,8 @@ var HTMLheaderRole = '<span>%data%</span><hr/>';
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
 var HTMLemail = '<li class="flex-item"><span class="orange-text">email</span><span class="white-text">%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><span class="white-text">%data%</span></li>';
+var HTMLlinkedIn = '<li class="flex-item iconbox"><span class="orange-text">linkedIn</span><a class ="iconlink" href="%link%" target="_blank"><img class="iconpic" src="%data%"></a></li>';
+var HTMLgithub = '<li class="flex-item iconbox"><span class="orange-text">github</span><a class ="iconlink" href="%link%" target="_blank"><img class="iconpic" src="%data%"></a></li>';
 var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
 
@@ -62,9 +62,17 @@ var googleMap = '<div id="map"></div>';
 /*
 The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
 */
+
+function inName(name){
+    var nameArr = name.trim().split(" ");
+    nameArr[0] = nameArr[0].slice(0,1).toUpperCase() + nameArr[0].slice(1);
+    nameArr[1] = nameArr[1].toUpperCase();
+    return nameArr.join(" ");
+}
+
 $(document).ready(function() {
   $('button').click(function() {
-    var iName = inName() || function(){};
+    var iName = inName(bio.name) || function(){};
     $('#name').html(iName);  
   });
 });
@@ -85,10 +93,8 @@ function logClicks(x,y) {
 }
 
 $(document).click(function(loc) {
-  // your code goes here!
+  logClicks(loc.pageX,loc.pageY);
 });
-
-
 
 /*
 This is the fun part. Here's where we generate the custom Google Map for the website.
@@ -106,7 +112,18 @@ function initializeMap() {
   var locations;
 
   var mapOptions = {
-    disableDefaultUI: true
+    disableDefaultUI: true,
+    zoomControl: true,
+    mapTypeControl: true,
+    mapTypeControlOptions: {
+      style : google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+      position : google.maps.ControlPosition.TOP_LEFT
+    },
+    scaleControl: true,
+    streetViewControl : true,
+    streetViewControlOptions: {
+      position : google.maps.ControlPosition.TOP_RIGHT
+    }
   };
 
   /* 
@@ -235,11 +252,11 @@ Uncomment the code below when you're ready to implement a Google Map!
 */
 
 // Calls the initializeMap() function when the page loads
-//window.addEventListener('load', initializeMap);
+window.addEventListener('load', initializeMap);
 
 // Vanilla JS way to listen for resizing of the window
 // and adjust map bounds
-//window.addEventListener('resize', function(e) {
+window.addEventListener('resize', function(e) {
   //Make sure the map bounds get updated on page resize
-//  map.fitBounds(mapBounds);
-//});
+  map.fitBounds(mapBounds);
+});
