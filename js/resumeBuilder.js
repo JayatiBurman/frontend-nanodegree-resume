@@ -195,13 +195,8 @@ var education = {
 
 var formattedName = HTMLheaderName.replace("%data%",bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%",bio.role);
-$('#header').append(formattedName);
-$('#header').append(formattedRole);
-
-//------------------------------------------------------------
-$('#main').append(internationalizeButton);
-$('#mapDiv').append(googleMap);
-//------------------------------------------------------------
+$('#header').prepend(formattedRole);
+$('#header').prepend(formattedName);
 
 HTMLmobile = HTMLmobile.replace('%data%',bio.contacts.mobile);
 HTMLemail = HTMLemail.replace('%data%',bio.contacts.email);
@@ -210,14 +205,15 @@ HTMLgithub = HTMLgithub.replace('%data%','https://iaresam.files.wordpress.com/20
 HTMLlinkedIn = HTMLlinkedIn.replace('%link%',bio.contacts.linkedIn);
 HTMLlinkedIn = HTMLlinkedIn.replace('%data%','http://icons.iconarchive.com/icons/position-relative/social-1/128/linkedin-icon.png');
 HTMLlocation = HTMLlocation.replace('%data%',bio.contacts.location);
-$('#footerContacts').append(HTMLmobile);
-$('#footerContacts').append(HTMLemail);
-$('#footerContacts').append(HTMLgithub);
-$('#footerContacts').append(HTMLlinkedIn);
-$('#footerContacts').append(HTMLlocation);
+$('#topContacts').append(HTMLmobile);
+$('#topContacts').append(HTMLemail);
+$('#topContacts').append(HTMLgithub);
+$('#topContacts').append(HTMLlinkedIn);
+$('#topContacts').append(HTMLlocation);
 
 HTMLbioPic = HTMLbioPic.replace('%data%', bio.bioPic);
-$('#header').prepend(HTMLbioPic);
+$('#header').append(HTMLbioPic);
+
 if(bio.skills.length > 0){
     $('#header').append(HTMLskillsStart);
     for (skill in bio.skills) {
@@ -226,6 +222,17 @@ if(bio.skills.length > 0){
     };
 }
 
+$('#mapDiv').append(googleMap);
+
+$('#footerContacts').append(HTMLmobile);
+$('#footerContacts').append(HTMLemail);
+$('#footerContacts').append(HTMLgithub);
+$('#footerContacts').append(HTMLlinkedIn);
+$('#footerContacts').append(HTMLlocation);
+
+//------------------------------------------------------------
+$('#main').append(internationalizeButton);
+//------------------------------------------------------------
 
 work.display = function(){
     if(work.jobs.length > 0){
@@ -269,5 +276,53 @@ projects.display = function(){
 
 projects.display();
 
+education.schools.display = function(){
+    if(education.schools.length > 0){
+        for(var school=0; school < education.schools.length; school++){
+            $('#education').append(HTMLschoolStart);
 
+            var newSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name);
+            $('.education-entry:last').append(newSchoolName);
 
+            var newDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+            $('.education-entry:last').append(newDegree);
+
+            var newDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
+            $('.education-entry:last').append(newDates);
+
+            var newLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+            $('.education-entry:last').append(newLocation);
+
+            var majors = education.schools[school].majors.join();
+            var newMajor = HTMLschoolMajor.replace("%data%", majors);
+            $('.education-entry:last').append(newMajor);
+        };
+    };
+}
+
+education.schools.display();
+
+education.onlineCourses.display = function(){
+    if (education.onlineCourses.length>0) {
+        $('#education').append(HTMLonlineClasses);
+    
+        for(var onlineCourse=0; onlineCourse < education.schools.length; onlineCourse++){
+            $('#education').append(HTMLschoolStart);
+
+            var newTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].title);
+            $('.education-entry:last').append(newTitle);
+
+            var newSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineCourse].school);
+            $('.education-entry:last').append(newSchool);
+
+            var newDates = HTMLonlineDates.replace("%data%", education.onlineCourses[onlineCourse].dates);
+            $('.education-entry:last').append(newDates);
+
+            var newURL= HTMLonlineURL.replace('%link%', education.onlineCourses[onlineCourse].url);
+            var newURL = newURL.replace('%data%', education.onlineCourses[onlineCourse].url);
+            $('.education-entry:last').append(newURL);
+        };
+    };
+}
+
+education.onlineCourses.display();
