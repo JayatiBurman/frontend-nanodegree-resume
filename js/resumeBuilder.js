@@ -1,3 +1,4 @@
+/*JSON for WORK */
 var work = {
     "jobs": [{
         "employer": "IBM India Pvt. Ltd.",
@@ -35,6 +36,7 @@ var work = {
     }]
 }
 
+/*JSON for PROJECTS*/
 var projects = {
     "projectList": [{
         "title": "Line Follower Robot",
@@ -64,9 +66,11 @@ var projects = {
     }]
 }
 
+/*JSON for BIO Information*/
+
 var bio = {
     "name": "Jayati Burman",
-    "role": "Java and Front-End Application Developer",
+    "role": "Application Developer",
     "welcomeMessage": "I am a blah blah blah ..",
     "bioPic": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/005/059/127/13a0ed4.jpg",
     "skills": ["Problem-Solving", "Analytical", "Object-Oriented-Programming", "Team-Work"],
@@ -83,6 +87,7 @@ var bio = {
     }
 }
 
+/*JSON for Eductaion information*/
 var education = {
     "schools": [{
         "name": "Delhi Public School",
@@ -176,6 +181,8 @@ var education = {
     }]
 }
 
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+$('#header').prepend(formattedRole);
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 $('#header').prepend(formattedName);
 
@@ -272,10 +279,10 @@ projects.display = function() {
         $('.project-entry:last').append(newHTMLprojectDescription);
         alert(projects.projectList[project].images.length);
         if (projects.projectList[project].images.length > 0) {
-            console.log("------"+projects.projectList[project].images.length);
+            console.log("------" + projects.projectList[project].images.length);
             $('.project-entry:last').append(HTMLprojectImageStart);
             for (var image = 0; image < projects.projectList[project].images.length; image++) {
-                console.log("image >>>>"+ image);
+                console.log("image >>>>" + image);
                 var newHTMLprojectImage = HTMLprojectImage.replace('%data%', projects.projectList[project].images[image]);
                 $('.img-div:last').append(newHTMLprojectImage);
             }
@@ -320,13 +327,13 @@ education.onlineCourses.display = function() {
         for (var onlineCourse = 0; onlineCourse < education.schools.length; onlineCourse++) {
             $('#education').append(HTMLschoolStart);
 
-            var newTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].title);
+            var newTitle = HTMLonlineTitle.replace('%data%', education.onlineCourses[onlineCourse].title);
             $('.education-entry:last').append(newTitle);
 
-            var newSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineCourse].school);
+            var newSchool = HTMLonlineSchool.replace('%data%', education.onlineCourses[onlineCourse].school);
             $('.education-entry:last').append(newSchool);
 
-            var newDates = HTMLonlineDates.replace("%data%", education.onlineCourses[onlineCourse].dates);
+            var newDates = HTMLonlineDates.replace('%data%', education.onlineCourses[onlineCourse].dates);
             $('.education-entry:last').append(newDates);
 
             var newURL = HTMLonlineURL.replace('%link%', education.onlineCourses[onlineCourse].url);

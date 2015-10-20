@@ -1,5 +1,6 @@
-var HTMLheaderName = '<h1 id="name">%data%</h1><hr/>';
-var HTMLheaderRole = '<span>%data%</span><hr/>';
+var HTMLheaderName = '<h1 id="name">%data%</h1>';
+var HTMLheaderRole = '<span id="headerRole
+">%data%</span><hr/>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
@@ -16,7 +17,7 @@ var HTMLcontactIcon3 = '<li class="flex-item social-icon"><a class ="iconlink" h
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-box"></ul>';
+var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills"></ul>';
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
@@ -61,7 +62,7 @@ var googleMap = '<div id="map"></div>';
 $(window).load(function(){
 /* Code to make the social bar appear highlighted when mouse is hovered*/
 
-$(".social").mouseenter(function() {
+$('.social').mouseenter(function() {
     $(this).css('opacity', '1.0');
 }).mouseleave(function() {
     $(this).css('opacity', '0.6');
@@ -69,13 +70,13 @@ $(".social").mouseenter(function() {
 
 
 /* Code to make mapDiv appear highlighted when mouse is hovered */
-$("#mapDiv").mouseenter(function() {
+$('#mapDiv').mouseenter(function() {
     $(this).css('opacity', '1.0');
 }).mouseleave(function() {
     $(this).css('opacity', '0.8');
 });
 
-/* Code to make roles and responsibilities and Technical skillss disappear on click*/
+/* Code to make roles and responsibilities and Technical skills disappear on click*/
 
 $('#rolesList').hide();
 $('#techList').hide();
@@ -87,13 +88,13 @@ $('.tech').click(function(){
     $('#techList').toggle(600);
 });
 
-$("#rolesList").mouseenter(function() {
+$('#rolesList').mouseenter(function() {
     $(this).css('opacity', '1.0');
 }).mouseleave(function() {
     $(this).css('opacity', '0.8');
 });
 
-$("#techList").mouseenter(function() {
+$('#techList').mouseenter(function() {
     $(this).css('opacity', '1.0');
 }).mouseleave(function() {
     $(this).css('opacity', '0.8');
@@ -101,41 +102,6 @@ $("#techList").mouseenter(function() {
 
 });
 
-
-/*
-The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
-
-
-function inName(name) {
-    var nameArr = name.trim().split(" ");
-    nameArr[0] = nameArr[0].slice(0, 1).toUpperCase() + nameArr[0].slice(1);
-    nameArr[1] = nameArr[1].toUpperCase();
-    return nameArr.join(" ");
-}
-
-$(document).ready(function() {
-    $('button').click(function() {
-        var iName = inName(bio.name) || function() {};
-        $('#name').html(iName);
-    });
-});
-
-/*
-The next few lines about clicks are for the Collecting Click Locations quiz in Lesson 2.
-*/
-clickLocations = [];
-
-function logClicks(x, y) {
-    clickLocations.push({
-        x: x,
-        y: y
-    });
-    console.log('x location: ' + x + '; y location: ' + y);
-}
-
-$(document).click(function(loc) {
-    logClicks(loc.pageX, loc.pageY);
-});
 
 /*
 Here's where we generate the custom Google Map for the website.

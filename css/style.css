@@ -124,11 +124,12 @@ a {
     background-color: #4a4a4a;
 }
 
-
-/* TODO: Replace with image later */
-
 #header {
     background-color: #330033;
+}
+
+#headerRole {
+    color: #FF5050;
 }
 
 .flex-box {
@@ -139,6 +140,9 @@ a {
     justify-content: space-around;
     padding: 10px;
 }
+
+
+/*CSS for the connect side panel*/
 
 .social {
     position: fixed;
@@ -214,6 +218,9 @@ span {
     display: flex;
 }
 
+
+/*CSS for work role and tech*/
+
 .roles,
 .tech {
     margin: 15px 20px;
@@ -231,17 +238,40 @@ span {
     list-style: square;
 }
 
+
+/*CSS for the project images*/
+
 .img-div {
     width: 100%;
     height: 200px;
     overflow: hidden;
     margin: auto;
-    display: inline-block;  
+    display: inline-block;
 }
 
 #proj-img {
     max-height: 100%;
     max-width: 100%;
+}
+
+
+/*CSS for map*/
+
+#map {
+    display: block;
+    overflow: hidden;
+    height: 90%;
+    width: 90%;
+    margin: 0 5%;
+    opacity: 1.0 !important;
+}
+
+#mapDiv {
+    height: 600px;
+    width: 100%;
+    padding-bottom: 5%;
+    opacity: 0.8;
+    background-color: #470024;
 }
 
 
@@ -269,23 +299,9 @@ span {
     .welcome-message {
         display: none;
     }
-}
-
-#map {
-    display: block;
-    overflow: hidden;
-    height: 90%;
-    width: 90%;
-    margin: 0 5%;
-    opacity: 1.0 !important;
-}
-
-#mapDiv {
-    height: 600px;
-    width: 100%;
-    padding-bottom: 5%;
-    opacity: 0.8;
-    background-color: #470024;
+    #headerRole {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 750px) {
