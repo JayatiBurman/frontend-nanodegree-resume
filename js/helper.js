@@ -58,46 +58,46 @@ var googleMap = '<div id="map"></div>';
 
 
 
-$(window).load(function(){
-/* Code to make the social bar appear highlighted when mouse is hovered*/
+$(window).load(function() {
+    /* Code to make the social bar appear highlighted when mouse is hovered*/
 
-$('.social').mouseenter(function() {
-    $(this).css('opacity', '1.0');
-}).mouseleave(function() {
-    $(this).css('opacity', '0.6');
-});
+    $('.social').mouseenter(function() {
+        $(this).css('opacity', '1.0');
+    }).mouseleave(function() {
+        $(this).css('opacity', '0.6');
+    });
 
 
-/* Code to make mapDiv appear highlighted when mouse is hovered */
-$('#mapDiv').mouseenter(function() {
-    $(this).css('opacity', '1.0');
-}).mouseleave(function() {
-    $(this).css('opacity', '0.8');
-});
+    /* Code to make mapDiv appear highlighted when mouse is hovered */
+    $('#mapDiv').mouseenter(function() {
+        $(this).css('opacity', '1.0');
+    }).mouseleave(function() {
+        $(this).css('opacity', '0.8');
+    });
 
-/* Code to make roles and responsibilities and Technical skills disappear on click*/
+    /* Code to make roles and responsibilities and Technical skills disappear on click*/
 
-$('#rolesList').hide();
-$('#techList').hide();
-$('.roles').click(function(){
-    $('#rolesList').toggle(600);
-});
+    $('#rolesList').hide();
+    $('#techList').hide();
+    $('.roles').click(function() {
+        $('#rolesList').toggle(600);
+    });
 
-$('.tech').click(function(){
-    $('#techList').toggle(600);
-});
+    $('.tech').click(function() {
+        $('#techList').toggle(600);
+    });
 
-$('#rolesList').mouseenter(function() {
-    $(this).css('opacity', '1.0');
-}).mouseleave(function() {
-    $(this).css('opacity', '0.8');
-});
+    $('#rolesList').mouseenter(function() {
+        $(this).css('opacity', '1.0');
+    }).mouseleave(function() {
+        $(this).css('opacity', '0.8');
+    });
 
-$('#techList').mouseenter(function() {
-    $(this).css('opacity', '1.0');
-}).mouseleave(function() {
-    $(this).css('opacity', '0.8');
-});
+    $('#techList').mouseenter(function() {
+        $(this).css('opacity', '1.0');
+    }).mouseleave(function() {
+        $(this).css('opacity', '0.8');
+    });
 
 });
 
