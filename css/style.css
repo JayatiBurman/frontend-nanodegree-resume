@@ -214,17 +214,58 @@ span {
   display: flex;
 }
 
-.roles{
+.roles,.tech{
   margin: 15px 20px;
   background-color: #B2B2B2;
-  opacity: 0.7;
+  cursor: pointer;
 }
 
-#rolesList {
+#rolesList,#techList {
   padding: 10px;
+  opacity: 0.8;
+  color: black;
   font-size: 14px;
   line-height: 21px;
   list-style: square;
+}
+
+.img-div {
+    height: 200px;
+    width: 300px;
+    margin: 20px auto;
+}
+.proj-img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+#left {
+    height: 100%;
+    width: 20%;
+    left: 0;
+    top:0;
+    position: absolute;
+}
+#right {
+    height: 100%;
+    width: 20%;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+.left{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top:40%;
+    left: 0;
+}
+.right{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top:40%;
+    right: 0;
 }
 /* Media queries to handle various device widths */
 
@@ -254,17 +295,19 @@ span {
 
 #map {
     display: block;
-    height: 100%;
+    overflow: hidden;
+    height: 90%;
+    width: 90%;
     margin: 0 5%;
     opacity: 1.0 !important;
 }
 
 #mapDiv {
-    height: 500px;
+    height: 600px;
     width: 100%;
     padding-bottom: 5%;
-    background-color: #470024;
     opacity: 0.8;
+    background-color: #470024;
 }
 
 @media only screen and (min-width: 750px) {

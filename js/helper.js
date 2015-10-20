@@ -29,13 +29,13 @@ var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 var HTMLrolesStart = '<div class="roles"><span>Roles and Responsibilities</span><ul id="rolesList"></ul></div>';
-var HTMLtechnologies = '<div><ul id="techList"></ul></div>';
+var HTMLtechStart = '<div class="tech"><span>Technical Skills</span><ul id="techList"></ul></div>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImage = '<img src="%data%">';
+var HTMLprojectImage = '<div class="img-div"><img class="proj-img" src="%data%"><div id="left"><img class="left" src="images/left.png"/></div><div id="right"><img class="right" src="images/right.png"/></div></div>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
@@ -56,6 +56,8 @@ var googleMap = '<div id="map"></div>';
 
 
 
+
+$(window).load(function(){
 /* Code to make the social bar appear highlighted when mouse is hovered*/
 
 $(".social").mouseenter(function() {
@@ -72,17 +74,35 @@ $("#mapDiv").mouseenter(function() {
     $(this).css('opacity', '0.8');
 });
 
-/* Code to make roles and responsibilities disappear on click*/
-// $("").on("click", function() {
-//     console.log("blah");
-//     $("div.roles").toggleClass("rolesList");
-// });
+/* Code to make roles and responsibilities and Technical skillss disappear on click*/
+$('.roles').click(function(){
+    $('#rolesList').toggle(600);
+});
+
+$('.tech').click(function(){
+    $('#techList').toggle(600);
+});
+
 $("#rolesList").mouseenter(function() {
-    alert("yhgsdhf");
     $(this).css('opacity', '1.0');
 }).mouseleave(function() {
-  alert("yhgsdhf1");
-    $(this).css('opacity', '0.7');
+    $(this).css('opacity', '0.8');
+});
+
+$("#techList").mouseenter(function() {
+    $(this).css('opacity', '1.0');
+}).mouseleave(function() {
+    $(this).css('opacity', '0.8');
+});
+
+});
+/*  Code to slide the project images  */
+$(".left").click(function(){
+
+});
+
+$(".right").click(function(){
+
 });
 /*
 The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.

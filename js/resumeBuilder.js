@@ -7,7 +7,7 @@ var work = {
         "employerIcon": "http://www.clientspectrum.com/wp-content/uploads/2013/11/icon-ibm.png",
         "client": "AT&T Inc.",
         "clientIcon": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSa7wBU6HWXojciWGY0W2HOxNDc6jnenAqdZTQkAnuK8k9LWcEXAg",
-        "description": "Working as an Application Developer/Programmer in Enterprise Software Systems for the leading Telecom provider in the US, AT&T. AT&T's Global Computing Platform(GCP) is a distributed information system that comprises a set of applications maintaining the data of the ATT corporate. GCP provides acts as a central repository for ATT services.",
+        "description": "Working as an Application Developer/Programmer in Enterprise Software Systems for the leading Telecom provider in the US, AT&T. AT&T's Global Computing Platform(GCP) is a distributed information system that comprises a set of applications maintaining and processing the data of the ATT corporate. GCP acts as a central repository for ATT services.",
         "roles": ["Strong Programming, designing and implementation experience in multi-tier applications using Java, J2EE, JDBC, JSP, JSTL, HTML, Struts, JavaScript, Servlets, JavaBeans, CSS, EJB, XSLT, JAXWS",
             "Extensive experience in developing Web Services - parsing, processing and design - using SOAP, WSDL and developing DTDs, XSD schemas for XML",
             "Strong experience in all the phases of software development life cycle including requirements review, analysis, design, implementation, deployment and support",
@@ -20,17 +20,17 @@ var work = {
             "Create deployment plans for Production deployment activities and provide extensive support pre and post deployment"
         ],
         "technologies": [
-            "Java/J2EE Technologies", "Servlets, JSP (EL, JSTL, Custom Tags), Apache Struts, Junit, Hibernate, Log4J Java Beans, EJB, JDBC, RMI, JMS, JNDI, CSI",
-            "Web Technologies", "XML, XSL, XSLT, DOM, CSS, Java Script, HTML/5, AJAX, GUI, Web services (SOAP, WSDL), JQuery",
-            "Web Development Skills", "Bootstrap, Responsive Web Design, Responsive Images, Website Performance Optimization, Browser Rendering Optimization, JavaScript,Design Patterns, Backbone.js, Javascript Testing",
-            "Programming Languages", "Java, SQL, PL/SQL, JavaScript, C++",
-            "OS", "Windows, UNIX, Linux",
-            "IDE", "Weblogic workshop 8.1/10.3.2, Eclipse",
-            "Methodologies", "Waterfall Model, Agile, OOAD",
-            "Version control", "SCME, SVN, Github",
-            "Database", "Oracle 9i/10g/11g, MySQL, SQLite",
-            "Servers", "BEA Web Logic 8.1/10.3 and Apache Tomcat application servers",
-            "Tools", "Putty, FileZilla, ClearQuest, SOAPUI, SQLDeveloper, TOAD, XMLSPY, RequisitePro, Contivo, Tibco"
+            "Java/J2EE Technologies : Servlets, JSP (EL, JSTL, Custom Tags), Apache Struts, Junit, Hibernate, Log4J Java Beans, EJB, JDBC, RMI, JMS, JNDI, CSI",
+            "Web Technologies : XML, XSL, XSLT, DOM, CSS, Java Script, HTML/5, AJAX, GUI, Web services (SOAP, WSDL), JQuery",
+            "Web Development Skills : Bootstrap, Responsive Web Design, Responsive Images, Website Performance Optimization, Browser Rendering Optimization, JavaScript,Design Patterns, Backbone.js, Javascript Testing",
+            "Programming Languages : Java, SQL, PL/SQL, JavaScript, C++",
+            "Operatin System : Windows, UNIX, Linux",
+            "IDE : Weblogic workshop 8.1/10.3.2, Eclipse",
+            "Methodologies : Waterfall Model, Agile, OOAD",
+            "Version control : SCME, SVN, Github",
+            "Database : Oracle 9i/10g/11g, MySQL, SQLite",
+            "Servers : BEA Web Logic 8.1/10.3 and Apache Tomcat application servers",
+            "Tools : Putty, FileZilla, ClearQuest, SOAPUI, SQLDeveloper, TOAD, XMLSPY, RequisitePro, Contivo, Tibco"
         ]
     }]
 }
@@ -42,7 +42,7 @@ var projects = {
         "description": "A basic line follower robot implemented using elementary electronic circuits" +
             "A basic line follower robot implemented using elementary electronic circuits " +
             "A basic line follower robot implemented using elementary electronic circuits ",
-        "images": ["images/appify.jpg", "images/bokeh.jpg"]
+        "images": ["images/img1.jpg", "images/img2.jpg"]
     }, {
         "title": "Microcontroller controlled robot",
         "dates": "September 2009",
@@ -52,7 +52,7 @@ var projects = {
             "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
             "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
             "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot ",
-        "images": ["images/bokeh.jpg", "images/sunflower.jpg"]
+        "images": ["images/img2.jpg", "images/img3.jpg"]
     }, {
         "title": "Anthropoid",
         "dates": "July 2010",
@@ -60,7 +60,7 @@ var projects = {
             "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
             "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
             "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot ",
-        "images": ["images/sunflower.jpg", "images/bokeh.jpg", "images/sunflower.jpg"]
+        "images": ["images/img1.jpg", "images/img2.jpg", "images/img3.jpg"]
     }, {
         "title": "Voice Controlled Robot",
         "dates": "November 2011",
@@ -68,7 +68,7 @@ var projects = {
             "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
             "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
             "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot ",
-        "images": ["images/fry.jpg"]
+        "images": ["images/img4.jpg"]
     }, {
         "title": "Responsive Protfolio Webpage",
         "dates": "August 2015",
@@ -78,7 +78,7 @@ var projects = {
             "A Protfolio Website consisting of various responsive elements" +
             "A Protfolio Website consisting of various responsive elements" +
             "A Protfolio Website consisting of various responsive elements",
-        "images": ["images/bigpic.jpg", "images/fry.jpg"]
+        "images": ["images/img5.jpg","images/img3.jpg"]
     }]
 }
 
@@ -87,7 +87,7 @@ var bio = {
     "role": "Java and Front-End Application Developer",
     "welcomeMessage": "I am a blah blah blah ..",
     "bioPic": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/005/059/127/13a0ed4.jpg",
-    "skills": ["Awesomeness", "Smartness", "blah", "blah1"],
+    "skills": ["Problem-Solving", "Analytical", "Object-Oriented-Programming", "Team-Work"],
     "contacts": {
         "mobile": "+91-9886140004",
         "email": "jayati.burman@gmail.com",
@@ -208,9 +208,6 @@ HTMLfb = HTMLfb.replace('%data%', bio.contacts.fbpic);
 HTMLlocation = HTMLlocation.replace('%data%', bio.contacts.location);
 $('#topContacts').append(HTMLmobile);
 $('#topContacts').append(HTMLemail);
-//$('#topContacts').append(HTMLgithub);
-//$('#topContacts').append(HTMLlinkedIn);
-//$('#topContacts').append(HTMLfb);
 $('#topContacts').append(HTMLlocation);
 
 HTMLcontactIcon1 = HTMLcontactIcon1.replace('%link%', bio.contacts.gitHub);
@@ -267,10 +264,10 @@ work.display = function() {
                 };
             }
             if (work.jobs[job].technologies.length > 0) {
-                $('.work-entry:last').append(HTMLtechnologies);
-                for(var tech = 0; tech < work.jobs[job].technologies.length; tech = tech + 2){
-                    
-                }
+                $('.work-entry:last').append(HTMLtechStart);
+                for (var tech = 0; tech < work.jobs[job].technologies.length; tech ++) {
+                    $('#techList').append('<li>' + work.jobs[job].technologies[tech] + '</li>');
+                };
             }
             
         };
