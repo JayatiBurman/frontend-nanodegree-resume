@@ -141,18 +141,18 @@ a {
 }
 
 .social {
-  position: fixed;
-  padding-top: 10px;
-  top : 15%;
-  right: 0;
-  background-color: #FFFF66;
-  opacity : 0.6;
-  width: 50px;
-  height : 122px;
-  list-style: none;
-  z-index: 11;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+    position: fixed;
+    padding-top: 10px;
+    top: 15%;
+    right: 0;
+    background-color: #FFFF66;
+    opacity: 0.6;
+    width: 50px;
+    height: 122px;
+    list-style: none;
+    z-index: 11;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .center-content {
@@ -175,7 +175,7 @@ ul {
 
 .iconbox {
     display: -webkit-box;
-    display : flex;
+    display: flex;
 }
 
 .iconlink {
@@ -190,7 +190,7 @@ ul {
 }
 
 .workicon {
-  padding: 0 10px 10px 0;
+    padding: 0 10px 10px 0;
 }
 
 img {
@@ -203,70 +203,48 @@ span {
 }
 
 #footerContacts {
-  background-color: #330033;
+    background-color: #330033;
 }
 
 #lets-connect {
     text-align: center;
 }
 
-.flex-item{
-  display: flex;
+.flex-item {
+    display: flex;
 }
 
-.roles,.tech{
-  margin: 15px 20px;
-  background-color: #B2B2B2;
-  cursor: pointer;
+.roles,
+.tech {
+    margin: 15px 20px;
+    background-color: #B2B2B2;
+    cursor: pointer;
 }
 
-#rolesList,#techList {
-  padding: 10px;
-  opacity: 0.8;
-  color: black;
-  font-size: 14px;
-  line-height: 21px;
-  list-style: square;
+#rolesList,
+#techList {
+    padding: 10px;
+    opacity: 0.8;
+    color: black;
+    font-size: 14px;
+    line-height: 21px;
+    list-style: square;
 }
 
 .img-div {
-    height: 200px;
-    width: 300px;
-    margin: 20px auto;
-}
-.proj-img {
-    height: 100%;
     width: 100%;
-    position: absolute;
+    height: 200px;
+    overflow: hidden;
+    margin: auto;
+    display: inline-block;  
 }
-#left {
-    height: 100%;
-    width: 20%;
-    left: 0;
-    top:0;
-    position: absolute;
+
+#proj-img {
+    max-height: 100%;
+    max-width: 100%;
 }
-#right {
-    height: 100%;
-    width: 20%;
-    right: 0;
-    top: 0;
-    position: absolute;
-}
-.left{
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    top:40%;
-    left: 0;
-}
-.right{
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    top:40%;
-    right: 0;
-}
+
+
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {

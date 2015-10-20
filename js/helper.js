@@ -35,7 +35,8 @@ var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImage = '<div class="img-div"><img class="proj-img" src="%data%"><div id="left"><img class="left" src="images/left.png"/></div><div id="right"><img class="right" src="images/right.png"/></div></div>';
+var HTMLprojectImageStart = '<div class="img-div"></div>';
+var HTMLprojectImage = '<img id="proj-img" src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
@@ -75,6 +76,9 @@ $("#mapDiv").mouseenter(function() {
 });
 
 /* Code to make roles and responsibilities and Technical skillss disappear on click*/
+
+$('#rolesList').hide();
+$('#techList').hide();
 $('.roles').click(function(){
     $('#rolesList').toggle(600);
 });
@@ -96,14 +100,8 @@ $("#techList").mouseenter(function() {
 });
 
 });
-/*  Code to slide the project images  */
-$(".left").click(function(){
 
-});
 
-$(".right").click(function(){
-
-});
 /*
 The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
 

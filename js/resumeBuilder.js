@@ -39,46 +39,28 @@ var projects = {
     "projectList": [{
         "title": "Line Follower Robot",
         "dates": "July 2009",
-        "description": "A basic line follower robot implemented using elementary electronic circuits" +
-            "A basic line follower robot implemented using elementary electronic circuits " +
-            "A basic line follower robot implemented using elementary electronic circuits ",
+        "description": "A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits ",
         "images": ["images/img1.jpg", "images/img2.jpg"]
     }, {
         "title": "Microcontroller controlled robot",
         "dates": "September 2009",
-        "description": "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
-            "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
-            "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
-            "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
-            "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
-            "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot ",
+        "description": "A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot ",
         "images": ["images/img2.jpg", "images/img3.jpg"]
     }, {
         "title": "Anthropoid",
         "dates": "July 2010",
-        "description": "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
-            "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
-            "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
-            "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot ",
+        "description": "A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot ",
         "images": ["images/img1.jpg", "images/img2.jpg", "images/img3.jpg"]
     }, {
         "title": "Voice Controlled Robot",
         "dates": "November 2011",
-        "description": "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
-            "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
-            "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot " +
-            "A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot ",
-        "images": ["images/img4.jpg"]
+        "description": "A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot ",
+        "images": ["images/img3.jpg"]
     }, {
         "title": "Responsive Protfolio Webpage",
         "dates": "August 2015",
-        "description": "A Protfolio Website consisting of various responsive elements" +
-            "A Protfolio Website consisting of various responsive elements" +
-            "A Protfolio Website consisting of various responsive elements" +
-            "A Protfolio Website consisting of various responsive elements" +
-            "A Protfolio Website consisting of various responsive elements" +
-            "A Protfolio Website consisting of various responsive elements",
-        "images": ["images/img5.jpg","images/img3.jpg"]
+        "description": "A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot ",
+        "images": ["images/img3.jpg", "images/img2.jpg"]
     }]
 }
 
@@ -265,11 +247,11 @@ work.display = function() {
             }
             if (work.jobs[job].technologies.length > 0) {
                 $('.work-entry:last').append(HTMLtechStart);
-                for (var tech = 0; tech < work.jobs[job].technologies.length; tech ++) {
+                for (var tech = 0; tech < work.jobs[job].technologies.length; tech++) {
                     $('#techList').append('<li>' + work.jobs[job].technologies[tech] + '</li>');
                 };
             }
-            
+
         };
     }
 };
@@ -288,11 +270,17 @@ projects.display = function() {
 
         var newHTMLprojectDescription = HTMLprojectDescription.replace('%data%', projects.projectList[project].description);
         $('.project-entry:last').append(newHTMLprojectDescription);
-
-        for (image in projects.projectList[project].images) {
-            var newHTMLprojectImage = HTMLprojectImage.replace('%data%', projects.projectList[project].images[image]);
-            $('.project-entry:last').append(newHTMLprojectImage);
+        alert(projects.projectList[project].images.length);
+        if (projects.projectList[project].images.length > 0) {
+            console.log("------"+projects.projectList[project].images.length);
+            $('.project-entry:last').append(HTMLprojectImageStart);
+            for (var image = 0; image < projects.projectList[project].images.length; image++) {
+                console.log("image >>>>"+ image);
+                var newHTMLprojectImage = HTMLprojectImage.replace('%data%', projects.projectList[project].images[image]);
+                $('.img-div:last').append(newHTMLprojectImage);
+            }
         }
+
 
     };
 }
