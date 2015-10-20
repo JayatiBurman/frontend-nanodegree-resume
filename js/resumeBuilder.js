@@ -277,12 +277,9 @@ projects.display = function() {
 
         var newHTMLprojectDescription = HTMLprojectDescription.replace('%data%', projects.projectList[project].description);
         $('.project-entry:last').append(newHTMLprojectDescription);
-        alert(projects.projectList[project].images.length);
         if (projects.projectList[project].images.length > 0) {
-            console.log("------" + projects.projectList[project].images.length);
             $('.project-entry:last').append(HTMLprojectImageStart);
             for (var image = 0; image < projects.projectList[project].images.length; image++) {
-                console.log("image >>>>" + image);
                 var newHTMLprojectImage = HTMLprojectImage.replace('%data%', projects.projectList[project].images[image]);
                 $('.img-div:last').append(newHTMLprojectImage);
             }
