@@ -8,7 +8,9 @@ var work = {
         "employerIcon": "http://www.clientspectrum.com/wp-content/uploads/2013/11/icon-ibm.png",
         "client": "AT&T Inc.",
         "clientIcon": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSa7wBU6HWXojciWGY0W2HOxNDc6jnenAqdZTQkAnuK8k9LWcEXAg",
-        "description": "Working as an Application Developer/Programmer in Enterprise Software Systems for the leading Telecom provider in the US, AT&T. AT&T's Global Computing Platform(GCP) is a distributed information system that comprises a set of applications maintaining and processing the data of the ATT corporate. GCP acts as a central repository for ATT services.",
+        "description": "Working as an Application Developer/Programmer in Enterprise Software Systems for the leading Telecom provider in the US, AT&T."+
+                        " AT&T's Global Computing Platform(GCP) is a distributed information system that comprises a set of applications maintaining and "+
+                        "processing the data of the ATT corporate. GCP acts as a central repository for ATT services.",
         "roles": ["Strong Programming, designing and implementation experience in multi-tier applications using Java, J2EE, JDBC, JSP, JSTL, HTML, Struts, JavaScript, Servlets, JavaBeans, CSS, EJB, XSLT, JAXWS",
             "Extensive experience in developing Web Services - parsing, processing and design - using SOAP, WSDL and developing DTDs, XSD schemas for XML",
             "Strong experience in all the phases of software development life cycle including requirements review, analysis, design, implementation, deployment and support",
@@ -41,22 +43,39 @@ var projects = {
     "projectList": [{
         "title": "Line Follower Robot",
         "dates": "July 2009",
-        "description": "A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits ",
+        "description": "A basic line follower robot implemented using elementary electronic circuits "+
+                        "A basic line follower robot implemented using elementary electronic circuits "+
+                        "A basic line follower robot implemented using elementary electronic circuits ",
         "images": ["images/img1.jpg", "images/img2.jpg"]
     }, {
         "title": "Microcontroller controlled robot",
         "dates": "September 2009",
-        "description": "A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot ",
+        "description": "A basic line follower robot implemented using elementary electronic circuits "+
+                        "A basic line follower robot implemented using elementary electronic circuits "+
+                        "A basic line follower robot implemented using elementary electronic circuits "+
+                        "A robotic vehicle controlled by microcontroller, used Assembly and "+
+                        "C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, "+
+                        "used Assembly and C programming to program the fucntioning of robot ",
         "images": ["images/img2.jpg", "images/img3.jpg"]
     }, {
         "title": "Anthropoid",
         "dates": "July 2010",
-        "description": "A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot ",
+        "description": "A basic line follower robot implemented using elementary electronic circuits "+
+                        "A basic line follower robot implemented using elementary electronic circuits "+
+                        " basic line follower robot implemented using elementary electronic circuits "+
+                        "A robotic vehicle controlled by microcontroller, used Assembly and "+
+                        "C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, "+
+                        "used Assembly and C programming to program the fucntioning of robot ",
         "images": ["images/img1.jpg", "images/img2.jpg", "images/img3.jpg"]
     }, {
         "title": "Voice Controlled Robot",
         "dates": "November 2011",
-        "description": "A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot ",
+        "description": "A basic line follower robot implemented using elementary electronic circuits "+
+                        "A basic line follower robot implemented using elementary electronic circuits "+
+                        "A basic line follower robot implemented using elementary electronic circuits "+
+                        "A robotic vehicle controlled by microcontroller, used Assembly and "+
+                        "C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, "+
+                        "used Assembly and C programming to program the fucntioning of robot ",
         "images": ["images/img3.jpg"]
     }, {
         "title": "Responsive Protfolio Webpage",
