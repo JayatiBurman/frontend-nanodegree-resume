@@ -208,15 +208,12 @@ var education = {
 
 var data = "%data%";
 var link = "%link%";
-var $header = $('#header');
-var $topContacts = $('#topContacts');
-var $contactLinks = $('#contactLinks');
-var $footerContacts = $('#footerContacts');
-var $workEx = $('#workExperience');
-var $projects = $('#projects');
-var $education = $('#education');
 
 bio.display = function() {
+    var $header = $('#header');
+    var $topContacts = $('#topContacts');
+    var $contactLinks = $('#contactLinks');
+    var $footerContacts = $('#footerContacts');
     var formattedRole = HTMLheaderRole.replace(data, bio.role);
     $header.prepend(formattedRole);
     var formattedName = HTMLheaderName.replace(data, bio.name);
@@ -225,7 +222,7 @@ bio.display = function() {
     $header.append(HTMLbioPic);
     if (bio.skills.length > 0) {
         $header.append(HTMLskillsStart);
-        for (var skill = 0; skill < bio.skills.length; skill++) {
+        for (var skill = 0, len = bio.skills.length; skill < len; skill++) {
             var formattedSkill = HTMLskills.replace(data, bio.skills[skill]);
             $('#skills').append(formattedSkill);
         }
@@ -257,8 +254,9 @@ var displayMap = function() {
 };
 
 work.display = function() {
+    var $workEx = $('#workExperience');
     if (work.jobs.length > 0) {
-        for (var job = 0; job < work.jobs.length; job++) {
+        for (var job = 0, len = work.jobs.length; job < len; job++) {
             HTMLworkEmployer = HTMLworkEmployer.replace(data, work.jobs[job].employer);
             HTMLworkTitle = HTMLworkTitle.replace(data, work.jobs[job].title);
             HTMLworkIcon = HTMLworkIcon.replace(data, work.jobs[job].employerIcon);
@@ -274,13 +272,13 @@ work.display = function() {
             $workEntryLast.append(HTMLworkDates, HTMLworkLocation, HTMLworkDescription);
             if (work.jobs[job].roles.length > 0) {
                 $workEntryLast.append(HTMLrolesStart);
-                for (var role = 0; role < work.jobs[job].roles.length; role++) {
+                for (var role = 0, len = work.jobs[job].roles.length; role < len; role++) {
                     $('#rolesList').append('<li>' + work.jobs[job].roles[role] + '</li>');
                 }
             }
             if (work.jobs[job].technologies.length > 0) {
                 $workEntryLast.append(HTMLtechStart);
-                for (var tech = 0; tech < work.jobs[job].technologies.length; tech++) {
+                for (var tech = 0, len = work.jobs[job].technologies.length; tech < len; tech++) {
                     $('#techList').append('<li>' + work.jobs[job].technologies[tech] + '</li>');
                 }
             }
@@ -289,7 +287,8 @@ work.display = function() {
 };
 
 projects.display = function() {
-    for (var project = 0; project < projects.projectList.length; project++) {
+    var $projects = $('#projects');
+    for (var project = 0, len = projects.projectList.length; project < len; project++) {
         $projects.append(HTMLprojectStart);
         var newHTMLprojectTitle = HTMLprojectTitle.replace(data, projects.projectList[project].title);
         var newHTMLprojectDates = HTMLprojectDates.replace(data, projects.projectList[project].dates);
@@ -297,7 +296,7 @@ projects.display = function() {
         $('.project-entry:last').append(newHTMLprojectTitle, newHTMLprojectDates, newHTMLprojectDescription);
         if (projects.projectList[project].images.length > 0) {
             $('.project-entry:last').append(HTMLprojectImageStart);
-            for (var image = 0; image < projects.projectList[project].images.length; image++) {
+            for (var image = 0, len = projects.projectList[project].images.length; image < len; image++) {
                 var newHTMLprojectImage = HTMLprojectImage.replace(data, projects.projectList[project].images[image]);
                 $('.img-div:last').append(newHTMLprojectImage);
             }
@@ -306,8 +305,9 @@ projects.display = function() {
 };
 
 education.display = function() {
+    var $education = $('#education');
     if (education.schools.length > 0) {
-        for (var school = 0; school < education.schools.length; school++) {
+        for (var school = 0, len = education.schools.length; school < len; school++) {
             $education.append(HTMLschoolStart);
 
             var newSchoolName = HTMLschoolName.replace(data, education.schools[school].name);
@@ -324,7 +324,7 @@ education.display = function() {
     if (education.onlineCourses.length > 0) {
         $education.append(HTMLonlineClasses);
 
-        for (var onlineCourse = 0; onlineCourse < education.schools.length; onlineCourse++) {
+        for (var onlineCourse = 0, len = education.schools.length; onlineCourse < len; onlineCourse++) {
             $education.append(HTMLschoolStart);
             var newTitle = HTMLonlineTitle.replace(data, education.onlineCourses[onlineCourse].title);
             var newSchool = HTMLonlineSchool.replace(data, education.onlineCourses[onlineCourse].school);
