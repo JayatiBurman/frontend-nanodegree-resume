@@ -324,14 +324,14 @@ education.display = function() {
     if (education.onlineCourses.length > 0) {
         $education.append(HTMLonlineClasses);
 
-        for (var onlineCourse = 0, len1 = education.schools.length; onlineCourse < len; onlineCourse++) {
+        for (var onlineCourse = 0, len1 = education.schools.length; onlineCourse < len1; onlineCourse++) {
             $education.append(HTMLschoolStart);
             var newTitle = HTMLonlineTitle.replace(app.data, education.onlineCourses[onlineCourse].title);
             var newSchool = HTMLonlineSchool.replace(app.data, education.onlineCourses[onlineCourse].school);
-            var newDates = HTMLonlineDates.replace(app.data, education.onlineCourses[onlineCourse].dates);
-            var newURL = HTMLonlineURL.replace(app.link, education.onlineCourses[onlineCourse].url);
+            var newDates1 = HTMLonlineDates.replace(app.data, education.onlineCourses[onlineCourse].dates);
+            var newURL1 = HTMLonlineURL.replace(app.link, education.onlineCourses[onlineCourse].url);
             newURL = newURL.replace(app.data, education.onlineCourses[onlineCourse].url);
-            $('.education-entry:last').append(newTitle, newSchool, newDates, newURL);
+            $('.education-entry:last').append(newTitle, newSchool, newDates1, newURL1);
         }
     }
 };
