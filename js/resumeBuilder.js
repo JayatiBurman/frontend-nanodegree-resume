@@ -1,3 +1,6 @@
+var app = app || {};
+app.data = "%data%";
+app.link = "%link%";
 /*JSON for WORK */
 var work = {
     "jobs": [{
@@ -206,50 +209,47 @@ var education = {
     }]
 };
 
-var data = "%data%";
-var link = "%link%";
-
 bio.display = function() {
     var $header = $('#header');
     var $topContacts = $('#topContacts');
     var $contactLinks = $('#contactLinks');
     var $footerContacts = $('#footerContacts');
-    var formattedRole = HTMLheaderRole.replace(data, bio.role);
+    var formattedRole = HTMLheaderRole.replace(app.data, bio.role);
     $header.prepend(formattedRole);
-    var formattedName = HTMLheaderName.replace(data, bio.name);
+    var formattedName = HTMLheaderName.replace(app.data, bio.name);
     $header.prepend(formattedName);
-    HTMLbioPic = HTMLbioPic.replace(data, bio.bioPic);
+    HTMLbioPic = HTMLbioPic.replace(app.data, bio.bioPic);
     $header.append(HTMLbioPic);
     if (bio.skills.length > 0) {
         $header.append(HTMLskillsStart);
         for (var skill = 0, len = bio.skills.length; skill < len; skill++) {
-            var formattedSkill = HTMLskills.replace(data, bio.skills[skill]);
+            var formattedSkill = HTMLskills.replace(app.data, bio.skills[skill]);
             $('#skills').append(formattedSkill);
         }
     }
-    HTMLmobile = HTMLmobile.replace(data, bio.contacts.mobile);
-    HTMLemail = HTMLemail.replace(data, bio.contacts.email);
-    HTMLgithub = HTMLgithub.replace(link, bio.contacts.gitHub);
-    HTMLgithub = HTMLgithub.replace(data, bio.contacts.gitpic);
-    HTMLlinkedIn = HTMLlinkedIn.replace(link, bio.contacts.linkedIn);
-    HTMLlinkedIn = HTMLlinkedIn.replace(data, bio.contacts.linkedpic);
-    HTMLfb = HTMLfb.replace(link, bio.contacts.fb);
-    HTMLfb = HTMLfb.replace(data, bio.contacts.fbpic);
-    HTMLlocation = HTMLlocation.replace(data, bio.contacts.location);
+    HTMLmobile = HTMLmobile.replace(app.data, bio.contacts.mobile);
+    HTMLemail = HTMLemail.replace(app.data, bio.contacts.email);
+    HTMLgithub = HTMLgithub.replace(app.link, bio.contacts.gitHub);
+    HTMLgithub = HTMLgithub.replace(app.data, bio.contacts.gitpic);
+    HTMLlinkedIn = HTMLlinkedIn.replace(app.link, bio.contacts.linkedIn);
+    HTMLlinkedIn = HTMLlinkedIn.replace(app.data, bio.contacts.linkedpic);
+    HTMLfb = HTMLfb.replace(app.link, bio.contacts.fb);
+    HTMLfb = HTMLfb.replace(app.data, bio.contacts.fbpic);
+    HTMLlocation = HTMLlocation.replace(app.data, bio.contacts.location);
     $topContacts.append(HTMLmobile, HTMLemail, HTMLlocation);
 
-    HTMLcontactIcon1 = HTMLcontactIcon1.replace(link, bio.contacts.gitHub);
-    HTMLcontactIcon1 = HTMLcontactIcon1.replace(data, bio.contacts.gitpic);
-    HTMLcontactIcon2 = HTMLcontactIcon2.replace(link, bio.contacts.linkedIn);
-    HTMLcontactIcon2 = HTMLcontactIcon2.replace(data, bio.contacts.linkedpic);
-    HTMLcontactIcon3 = HTMLcontactIcon3.replace(link, bio.contacts.fb);
-    HTMLcontactIcon3 = HTMLcontactIcon3.replace(data, bio.contacts.fbpic);
+    HTMLcontactIcon1 = HTMLcontactIcon1.replace(app.link, bio.contacts.gitHub);
+    HTMLcontactIcon1 = HTMLcontactIcon1.replace(app.data, bio.contacts.gitpic);
+    HTMLcontactIcon2 = HTMLcontactIcon2.replace(app.link, bio.contacts.linkedIn);
+    HTMLcontactIcon2 = HTMLcontactIcon2.replace(app.data, bio.contacts.linkedpic);
+    HTMLcontactIcon3 = HTMLcontactIcon3.replace(app.link, bio.contacts.fb);
+    HTMLcontactIcon3 = HTMLcontactIcon3.replace(app.data, bio.contacts.fbpic);
     $contactLinks.append(HTMLcontactIcon2, HTMLcontactIcon1, HTMLcontactIcon3);
 
     $footerContacts.append(HTMLmobile, HTMLemail, HTMLgithub, HTMLlinkedIn, HTMLfb, HTMLlocation);
 };
 
-var displayMap = function() {
+displayMap = function() {
     $('#mapDiv').append(googleMap);
 };
 
@@ -257,14 +257,14 @@ work.display = function() {
     var $workEx = $('#workExperience');
     if (work.jobs.length > 0) {
         for (var job = 0, len = work.jobs.length; job < len; job++) {
-            HTMLworkEmployer = HTMLworkEmployer.replace(data, work.jobs[job].employer);
-            HTMLworkTitle = HTMLworkTitle.replace(data, work.jobs[job].title);
-            HTMLworkIcon = HTMLworkIcon.replace(data, work.jobs[job].employerIcon);
-            HTMLworkClient = HTMLworkClient.replace(data, work.jobs[job].client);
-            HTMLworkClientIcon = HTMLworkClientIcon.replace(data, work.jobs[job].clientIcon);
-            HTMLworkDates = HTMLworkDates.replace(data, work.jobs[job].dates);
-            HTMLworkLocation = HTMLworkLocation.replace(data, work.jobs[job].location);
-            HTMLworkDescription = HTMLworkDescription.replace(data, work.jobs[job].description);
+            HTMLworkEmployer = HTMLworkEmployer.replace(app.data, work.jobs[job].employer);
+            HTMLworkTitle = HTMLworkTitle.replace(app.data, work.jobs[job].title);
+            HTMLworkIcon = HTMLworkIcon.replace(app.data, work.jobs[job].employerIcon);
+            HTMLworkClient = HTMLworkClient.replace(app.data, work.jobs[job].client);
+            HTMLworkClientIcon = HTMLworkClientIcon.replace(app.data, work.jobs[job].clientIcon);
+            HTMLworkDates = HTMLworkDates.replace(app.data, work.jobs[job].dates);
+            HTMLworkLocation = HTMLworkLocation.replace(app.data, work.jobs[job].location);
+            HTMLworkDescription = HTMLworkDescription.replace(app.data, work.jobs[job].description);
             $workEx.append(HTMLworkStart);
             var $workEntryLast = $('.work-entry:last');
             $workEntryLast.append(HTMLworkEmployer + HTMLworkTitle + HTMLworkIcon);
@@ -272,13 +272,13 @@ work.display = function() {
             $workEntryLast.append(HTMLworkDates, HTMLworkLocation, HTMLworkDescription);
             if (work.jobs[job].roles.length > 0) {
                 $workEntryLast.append(HTMLrolesStart);
-                for (var role = 0, len = work.jobs[job].roles.length; role < len; role++) {
+                for (var role = 0, len1 = work.jobs[job].roles.length; role < len1; role++) {
                     $('#rolesList').append('<li>' + work.jobs[job].roles[role] + '</li>');
                 }
             }
             if (work.jobs[job].technologies.length > 0) {
                 $workEntryLast.append(HTMLtechStart);
-                for (var tech = 0, len = work.jobs[job].technologies.length; tech < len; tech++) {
+                for (var tech = 0, len2 = work.jobs[job].technologies.length; tech < len2; tech++) {
                     $('#techList').append('<li>' + work.jobs[job].technologies[tech] + '</li>');
                 }
             }
@@ -290,14 +290,14 @@ projects.display = function() {
     var $projects = $('#projects');
     for (var project = 0, len = projects.projectList.length; project < len; project++) {
         $projects.append(HTMLprojectStart);
-        var newHTMLprojectTitle = HTMLprojectTitle.replace(data, projects.projectList[project].title);
-        var newHTMLprojectDates = HTMLprojectDates.replace(data, projects.projectList[project].dates);
-        var newHTMLprojectDescription = HTMLprojectDescription.replace(data, projects.projectList[project].description);
+        var newHTMLprojectTitle = HTMLprojectTitle.replace(app.data, projects.projectList[project].title);
+        var newHTMLprojectDates = HTMLprojectDates.replace(app.data, projects.projectList[project].dates);
+        var newHTMLprojectDescription = HTMLprojectDescription.replace(app.data, projects.projectList[project].description);
         $('.project-entry:last').append(newHTMLprojectTitle, newHTMLprojectDates, newHTMLprojectDescription);
         if (projects.projectList[project].images.length > 0) {
             $('.project-entry:last').append(HTMLprojectImageStart);
-            for (var image = 0, len = projects.projectList[project].images.length; image < len; image++) {
-                var newHTMLprojectImage = HTMLprojectImage.replace(data, projects.projectList[project].images[image]);
+            for (var image = 0, len1 = projects.projectList[project].images.length; image < len1; image++) {
+                var newHTMLprojectImage = HTMLprojectImage.replace(app.data, projects.projectList[project].images[image]);
                 $('.img-div:last').append(newHTMLprojectImage);
             }
         }
@@ -310,27 +310,27 @@ education.display = function() {
         for (var school = 0, len = education.schools.length; school < len; school++) {
             $education.append(HTMLschoolStart);
 
-            var newSchoolName = HTMLschoolName.replace(data, education.schools[school].name);
-            var newDegree = HTMLschoolDegree.replace(data, education.schools[school].degree);
-            var newDates = HTMLschoolDates.replace(data, education.schools[school].dates);
-            var newLocation = HTMLschoolLocation.replace(data, education.schools[school].location);
+            var newSchoolName = HTMLschoolName.replace(app.data, education.schools[school].name);
+            var newDegree = HTMLschoolDegree.replace(app.data, education.schools[school].degree);
+            var newDates = HTMLschoolDates.replace(app.data, education.schools[school].dates);
+            var newLocation = HTMLschoolLocation.replace(app.data, education.schools[school].location);
             var majors = education.schools[school].majors.join(", ");
-            var newMajor = HTMLschoolMajor.replace(data, majors);
-            var newURL = HTMLonlineURL.replace(link, education.schools[school].url);
-            newURL = newURL.replace(data, education.schools[school].url);
+            var newMajor = HTMLschoolMajor.replace(app.data, majors);
+            var newURL = HTMLonlineURL.replace(app.link, education.schools[school].url);
+            newURL = newURL.replace(app.data, education.schools[school].url);
             $('.education-entry:last').append(newSchoolName, newDegree, newDates, newLocation, newMajor, newURL);
         }
     }
     if (education.onlineCourses.length > 0) {
         $education.append(HTMLonlineClasses);
 
-        for (var onlineCourse = 0, len = education.schools.length; onlineCourse < len; onlineCourse++) {
+        for (var onlineCourse = 0, len1 = education.schools.length; onlineCourse < len; onlineCourse++) {
             $education.append(HTMLschoolStart);
-            var newTitle = HTMLonlineTitle.replace(data, education.onlineCourses[onlineCourse].title);
-            var newSchool = HTMLonlineSchool.replace(data, education.onlineCourses[onlineCourse].school);
-            var newDates = HTMLonlineDates.replace(data, education.onlineCourses[onlineCourse].dates);
-            var newURL = HTMLonlineURL.replace(link, education.onlineCourses[onlineCourse].url);
-            newURL = newURL.replace(data, education.onlineCourses[onlineCourse].url);
+            var newTitle = HTMLonlineTitle.replace(app.data, education.onlineCourses[onlineCourse].title);
+            var newSchool = HTMLonlineSchool.replace(app.data, education.onlineCourses[onlineCourse].school);
+            var newDates = HTMLonlineDates.replace(app.data, education.onlineCourses[onlineCourse].dates);
+            var newURL = HTMLonlineURL.replace(app.link, education.onlineCourses[onlineCourse].url);
+            newURL = newURL.replace(app.data, education.onlineCourses[onlineCourse].url);
             $('.education-entry:last').append(newTitle, newSchool, newDates, newURL);
         }
     }
