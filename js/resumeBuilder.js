@@ -49,7 +49,7 @@ var projects = {
         "description": "A basic line follower robot implemented using elementary electronic circuits " +
             "A basic line follower robot implemented using elementary electronic circuits " +
             "A basic line follower robot implemented using elementary electronic circuits ",
-        "images": ["images/img1.jpg", "images/img2.jpg"]
+        "images": ["images/img1.JPG", "images/img2.JPG"]
     }, {
         "title": "Microcontroller controlled robot",
         "dates": "September 2009",
@@ -59,7 +59,7 @@ var projects = {
             "A robotic vehicle controlled by microcontroller, used Assembly and " +
             "C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, " +
             "used Assembly and C programming to program the fucntioning of robot ",
-        "images": ["images/img2.jpg", "images/img3.jpg"]
+        "images": ["images/img2.JPG", "images/img3.JPG"]
     }, {
         "title": "Anthropoid",
         "dates": "July 2010",
@@ -69,7 +69,7 @@ var projects = {
             "A robotic vehicle controlled by microcontroller, used Assembly and " +
             "C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, " +
             "used Assembly and C programming to program the fucntioning of robot ",
-        "images": ["images/img1.jpg", "images/img2.jpg", "images/img3.jpg"]
+        "images": ["images/img1.JPG", "images/img2.JPG", "images/img3.JPG"]
     }, {
         "title": "Voice Controlled Robot",
         "dates": "November 2011",
@@ -79,12 +79,12 @@ var projects = {
             "A robotic vehicle controlled by microcontroller, used Assembly and " +
             "C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, " +
             "used Assembly and C programming to program the fucntioning of robot ",
-        "images": ["images/img3.jpg"]
+        "images": ["images/img3.JPG"]
     }, {
         "title": "Responsive Protfolio Webpage",
         "dates": "August 2015",
         "description": "A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot ",
-        "images": ["images/img3.jpg", "images/img2.jpg"]
+        "images": ["images/img3.JPG", "images/img2.JPG"]
     }]
 };
 
