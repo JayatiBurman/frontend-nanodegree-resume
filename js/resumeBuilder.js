@@ -38,6 +38,23 @@ var work = {
             "Servers : BEA Web Logic 8.1/10.3 and Apache Tomcat application servers",
             "Tools : Putty, FileZilla, ClearQuest, SOAPUI, SQLDeveloper, TOAD, XMLSPY, RequisitePro, Contivo, Tibco"
         ]
+    }, {
+        "employer": "NTPC Ltd.",
+        "title": "Industrial Trainee",
+        "location": "Sipat",
+        "dates": "July 2010",
+        "employerIcon": "images/ntpc_logo.JPG",
+        "client": "",
+        "clientIcon": "",
+        "description": "NTPC Ltd., Sipat is a coal based power plant with an installed capacity of 2980 MW, consisting of 5 units." +
+            "I worked under Control and Instrumentation Department for a period of 1 month as a Industrial Trainee" +
+            "Understand the processes involved in coal based power generation at NTPC Thermal Power Plant,Sipat" +
+            "Work under Control and Instrumentation Department to comprehend its functions and roles in the power generation process" +
+            "Realize the architecture and role of DDCMIS - Distributed Digital Control, Management and Information System in governing " +
+            "and handling the processes in the power plant" +
+            "Learn about several ecofriendly practices followed by the plant such as minimizing emissions and ash utilization",
+        "roles": "",
+        "technologies": ""
     }]
 };
 
@@ -46,44 +63,47 @@ var projects = {
     "projectList": [{
         "title": "Line Follower Robot",
         "dates": "July 2009",
-        "description": "A basic line follower robot implemented using elementary electronic circuits " +
-            "A basic line follower robot implemented using elementary electronic circuits " +
-            "A basic line follower robot implemented using elementary electronic circuits ",
+        "description": "Built an autonomous robotic car which could follow a black line in a white background (or vice versa ) and " +
+            "would take right turn wherever cross overs arrived. Used electronic decision making circuit along with " +
+            "sensors array for deciding the direction of motion. A part of basic electronics workshop conducted by Crux.",
         "images": ["images/img1.JPG", "images/img2.JPG"]
     }, {
         "title": "Microcontroller controlled robot",
         "dates": "September 2009",
-        "description": "A basic line follower robot implemented using elementary electronic circuits " +
-            "A basic line follower robot implemented using elementary electronic circuits " +
-            "A basic line follower robot implemented using elementary electronic circuits " +
-            "A robotic vehicle controlled by microcontroller, used Assembly and " +
-            "C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, " +
-            "used Assembly and C programming to program the fucntioning of robot ",
+        "description": "Built a miniature prototype robotic car which could be programmed in order to move autonomously along a " +
+            "certain defined path or could be controlled remotely through wireless controls. Attached sensors helped the " +
+            "car to turn if a hurdle was found in it's path and to continue turning until a clear path was found for further " +
+            "movement. A part of Introduction to microcontroller and advanced robotics Workshop conducted by Crux.",
         "images": ["images/img2.JPG", "images/img3.JPG"]
     }, {
         "title": "Anthropoid",
         "dates": "July 2010",
-        "description": "A basic line follower robot implemented using elementary electronic circuits " +
-            "A basic line follower robot implemented using elementary electronic circuits " +
-            " basic line follower robot implemented using elementary electronic circuits " +
-            "A robotic vehicle controlled by microcontroller, used Assembly and " +
-            "C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, " +
-            "used Assembly and C programming to program the fucntioning of robot ",
+        "description": "Designed and built a robot with its shape built to resemble human legs. Functionally implemented to mimic " +
+            "the human way of walking and programmed to walk forward and stop based on a signal from a wireless " +
+            "remote control. Used micro controllers, timing circuits, led indicators, wireless transmission and reception " +
+            "circuits and, stepper motors attached to the body of the robot for building the project. Minor Project - " +
+            "Bachelor Of Engineering - LNCT Indore",
         "images": ["images/img1.JPG", "images/img2.JPG", "images/img3.JPG"]
     }, {
         "title": "Voice Controlled Robot",
         "dates": "November 2011",
-        "description": "A basic line follower robot implemented using elementary electronic circuits " +
-            "A basic line follower robot implemented using elementary electronic circuits " +
-            "A basic line follower robot implemented using elementary electronic circuits " +
-            "A robotic vehicle controlled by microcontroller, used Assembly and " +
-            "C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, " +
-            "used Assembly and C programming to program the fucntioning of robot ",
+        "description": "Built a voice controlled robotic car with a voice recognition accuracy of 75% within a range of 300m. Used a " +
+            "micro controller based decision circuit to control the movement of the car using wirelessly transmitted voice " +
+            "commands. Incorporated sensors in the circuit to help program the car to turn in case of any obstacle in it's" +
+            "path. Car could be voice controlled for following movement directions - left, right, forward, back, stop and" +
+            "circle. Major Project - Bachelor of Engineering - LNCT,Indore",
         "images": ["images/img3.JPG"]
     }, {
-        "title": "Responsive Protfolio Webpage",
-        "dates": "August 2015",
-        "description": "A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A basic line follower robot implemented using elementary electronic circuits A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot A robotic vehicle controlled by microcontroller, used Assembly and C programming to program the fucntioning of robot ",
+        "title": "Chat Application",
+        "dates": "December 2012",
+        "description": "Built a simple chat program using Java Socket Programming A part of course work at NIIT",
+        "images": ["images/img3.JPG", "images/img2.JPG"]
+    }, {
+        "title": "Portfolio Mockup to HTML",
+        "dates": "September 2015",
+        "description": "Developed a personal portfolio page using HTML, CSS, and the Bootstrap framework. The page is fully " +
+            "responsive and works on mobile, tablet, and desktop browsers. A part of the Front-End Web Developer " +
+            "Nanodegree - Udacity",
         "images": ["images/img3.JPG", "images/img2.JPG"]
     }]
 };
@@ -257,19 +277,23 @@ work.display = function() {
     var $workEx = $('#workExperience');
     if (work.jobs.length > 0) {
         for (var job = 0, len = work.jobs.length; job < len; job++) {
-            HTMLworkEmployer = HTMLworkEmployer.replace(app.data, work.jobs[job].employer);
-            HTMLworkTitle = HTMLworkTitle.replace(app.data, work.jobs[job].title);
-            HTMLworkIcon = HTMLworkIcon.replace(app.data, work.jobs[job].employerIcon);
-            HTMLworkClient = HTMLworkClient.replace(app.data, work.jobs[job].client);
-            HTMLworkClientIcon = HTMLworkClientIcon.replace(app.data, work.jobs[job].clientIcon);
-            HTMLworkDates = HTMLworkDates.replace(app.data, work.jobs[job].dates);
-            HTMLworkLocation = HTMLworkLocation.replace(app.data, work.jobs[job].location);
-            HTMLworkDescription = HTMLworkDescription.replace(app.data, work.jobs[job].description);
+            console.log("employer number : " + (job + 1));
+            var newHTMLworkEmployer = HTMLworkEmployer.replace(app.data, work.jobs[job].employer);
+            console.log(work.jobs[job].employer + ": work.jobs[job].employer");
+            var newHTMLworkTitle = HTMLworkTitle.replace(app.data, work.jobs[job].title);
+            var newHTMLworkIcon = HTMLworkIcon.replace(app.data, work.jobs[job].employerIcon);
+            var newHTMLworkDates = HTMLworkDates.replace(app.data, work.jobs[job].dates);
+            var newHTMLworkLocation = HTMLworkLocation.replace(app.data, work.jobs[job].location);
+            var newHTMLworkDescription = HTMLworkDescription.replace(app.data, work.jobs[job].description);
             $workEx.append(HTMLworkStart);
             var $workEntryLast = $('.work-entry:last');
-            $workEntryLast.append(HTMLworkEmployer + HTMLworkTitle + HTMLworkIcon);
-            $workEntryLast.append(HTMLworkClient + HTMLworkClientIcon);
-            $workEntryLast.append(HTMLworkDates, HTMLworkLocation, HTMLworkDescription);
+            $workEntryLast.append(newHTMLworkEmployer + newHTMLworkTitle + newHTMLworkIcon);
+            if ((work.jobs[job].client.length > 0) || (work.jobs[job].clientIcon.length > 0)) {
+                var newHTMLworkClient = HTMLworkClient.replace(app.data, work.jobs[job].client);
+                var newHTMLworkClientIcon = HTMLworkClientIcon.replace(app.data, work.jobs[job].clientIcon);
+                $workEntryLast.append(newHTMLworkClient + newHTMLworkClientIcon);
+            }
+            $workEntryLast.append(newHTMLworkDates, newHTMLworkLocation, newHTMLworkDescription);
             if (work.jobs[job].roles.length > 0) {
                 $workEntryLast.append(HTMLrolesStart);
                 for (var role = 0, len1 = work.jobs[job].roles.length; role < len1; role++) {
@@ -330,7 +354,7 @@ education.display = function() {
             var newSchool = HTMLonlineSchool.replace(app.data, education.onlineCourses[onlineCourse].school);
             var newDates1 = HTMLonlineDates.replace(app.data, education.onlineCourses[onlineCourse].dates);
             var newURL1 = HTMLonlineURL.replace(app.link, education.onlineCourses[onlineCourse].url);
-            newURL = newURL.replace(app.data, education.onlineCourses[onlineCourse].url);
+            newURL1 = newURL1.replace(app.data, education.onlineCourses[onlineCourse].url);
             $('.education-entry:last').append(newTitle, newSchool, newDates1, newURL1);
         }
     }
