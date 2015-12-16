@@ -6,10 +6,24 @@
     <!-- Tells the browser what the title of this page should be. -->
     <title>Jayati Burman Resume</title>
     <!-- Load the page styles. -->
-    <link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+    <link href="css/nivo-slider.css" rel="stylesheet">
+
     <script src="js/jQuery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/jquery.nivo.slider.pack.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <script>
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+            directionNavHide: false,
+            captionOpacity: 1,
+            prevText: '<',
+            nextText: '>'
+        });
+    });
+    </script>
     <meta name="viewport" content="width=device-width">
 </head>
 

@@ -35,8 +35,8 @@ var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImageStart = '<div class="img-div"></div>';
-var HTMLprojectImage = '<img id="proj-img" src="%data%">';
+var HTMLprojectImageStart = '<div class="slider-wrapper futurico-theme"><div id="slider" class="nivoSlider"></div></div>';
+var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
@@ -99,6 +99,15 @@ $(window).load(function() {
         $(this).css('opacity', '0.8');
     });
 
+/*   
+Slider
+
+    $('#slider').nivoSlider({
+            directionNavHide: false,
+            captionOpacity: 1,
+            prevText: '<',
+            nextText: '>'
+    });*/
 });
 
 

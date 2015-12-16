@@ -14,29 +14,31 @@ var work = {
         "description": "Working as an Application Developer/Programmer in Enterprise Software Systems for the leading Telecom provider in the US, AT&T." +
             " AT&T's Global Computing Platform(GCP) is a distributed information system that comprises a set of applications maintaining and " +
             "processing the data of the ATT corporate. GCP acts as a central repository for ATT services.",
-        "roles": ["Strong Programming, designing and implementation experience in multi-tier applications using Java, J2EE, JDBC, JSP, JSTL, HTML, Struts, JavaScript, Servlets, JavaBeans, CSS, EJB, XSLT, JAXWS",
-            "Extensive experience in developing Web Services - parsing, processing and design - using SOAP, WSDL and developing DTDs, XSD schemas for XML",
-            "Strong experience in all the phases of software development life cycle including requirements review, analysis, design, implementation, deployment and support",
-            "Experience in Java design patterns such as Session Façade, Singleton, Data Access Objects (DAO), and Business Delegate",
-            "Experience in software testing, Junit testing, regression testing, defect tracking and management using Clear Quest",
-            "Experience in non-functional requirements engineering - improving Performance and Scalability",
-            "Experience working with Business Product Managers and Users to resolve critical Production Issues and prioritize problems",
-            "Quaterly project delivery, project status management, expedite fixes for defects, pairwise System Testing and support, documentation, requirements tracking",
-            "Experience in application migration to new Hardware, Database and Technology",
-            "Create deployment plans for Production deployment activities and provide extensive support pre and post deployment"
+        "roles": ["Analyzed the functional requirements provided by the System Engineers",
+            "Designed, implemented and maintained SOAP based web service provider applications",
+            "Performed unit and integration tests post software development process",
+            "Documented the plan and results from requirements analysis, design, code and test phases",
+            "Performed peer review on team members’ project deliverables",
+            "Delivered solutions to existing production issues",
+            "Catered to non-functional requirements by improving performance using SQL optimization and database indexing",
+            "Performed software modernization for legacy applications; Migrated applications from Weblogic 8.1 to Weblogic 10.3",
+            "Trained new joiners through knowledge transfer sessions",
+            "Engineered the requirements for transforming web services into Application Programming Interfaces",
+            "Engineered the design of user interface tool to ensure better scalability for future enhancements",
+            "Understood the logic, complexity and flow involved and created design for web application implementation"
         ],
         "technologies": [
-            "Java/J2EE Technologies : Servlets, JSP (EL, JSTL, Custom Tags), Apache Struts, Junit, Hibernate, Log4J Java Beans, EJB, JDBC, RMI, JMS, JNDI, CSI",
-            "Web Technologies : XML, XSL, XSLT, DOM, CSS, Java Script, HTML/5, AJAX, GUI, Web services (SOAP, WSDL), JQuery",
+            "Java/J2EE Technologies : Servlets, JSP, Apache Struts, Hibernate, Log4J Java Beans, EJB, JDBC, JMS, JNDI, CSI",
+            "Web Technologies : DOM, CSS, Java Script, JQuery, HTML5, AJAX, Web services (SOAP, WSDL)",
             "Web Development Skills : Bootstrap, Responsive Web Design, Responsive Images, Website Performance Optimization, Browser Rendering Optimization, JavaScript,Design Patterns, Backbone.js, Javascript Testing",
-            "Programming Languages : Java, SQL, PL/SQL, JavaScript, C++",
-            "Operatin System : Windows, UNIX, Linux",
+            "Programming Languages : Java, SQL, PL/SQL, JavaScript, C++, XML, XSL",
+            "Operating System : Windows, UNIX, Linux",
             "IDE : Weblogic workshop 8.1/10.3.2, Eclipse",
-            "Methodologies : Waterfall Model, Agile, OOAD",
+            "Methodologies : Waterfall Model, Evolutionary Prototyping, OOAD",
             "Version control : SCME, SVN, Github",
             "Database : Oracle 9i/10g/11g, MySQL, SQLite",
             "Servers : BEA Web Logic 8.1/10.3 and Apache Tomcat application servers",
-            "Tools : Putty, FileZilla, ClearQuest, SOAPUI, SQLDeveloper, TOAD, XMLSPY, RequisitePro, Contivo, Tibco"
+            "Tools : Putty, FileZilla, ClearQuest, HP-Quality Center, SOAPUI, SQLDeveloper, TOAD, XMLSPY, RequisitePro, Contivo, Tibco"
         ]
     }, {
         "employer": "NTPC Ltd.",
@@ -47,12 +49,12 @@ var work = {
         "client": "",
         "clientIcon": "",
         "description": "NTPC Ltd., Sipat is a coal based power plant with an installed capacity of 2980 MW, consisting of 5 units." +
-            "I worked under Control and Instrumentation Department for a period of 1 month as a Industrial Trainee" +
-            "Understand the processes involved in coal based power generation at NTPC Thermal Power Plant,Sipat" +
-            "Work under Control and Instrumentation Department to comprehend its functions and roles in the power generation process" +
-            "Realize the architecture and role of DDCMIS - Distributed Digital Control, Management and Information System in governing " +
-            "and handling the processes in the power plant" +
-            "Learn about several ecofriendly practices followed by the plant such as minimizing emissions and ash utilization",
+            "I worked under Control and Instrumentation Department as an Industrial Trainee." +
+            "<ol><li>Studied the processes involved in coal based power generation at NTPC Thermal Power Plant,Sipat</li>" +
+            "<li>Analyzed the architecture of DDCMIS – Distributed Digital Control Monitoring and Information System and its role in governing and handling the processes in the power plant</li>" +
+            "<li>Created a detailed report based on my study and analyses</li>" +
+            "<li>Learnt about several ecofriendly practices followed by the plant such as minimizing emissions and ash utilization</li></ol>",
+            
         "roles": "",
         "technologies": ""
     }]
@@ -66,7 +68,7 @@ var projects = {
         "description": "Built an autonomous robotic car which could follow a black line in a white background (or vice versa ) and " +
             "would take right turn wherever cross overs arrived. Used electronic decision making circuit along with " +
             "sensors array for deciding the direction of motion. A part of basic electronics workshop conducted by Crux.",
-        "images": ["images/img1.JPG", "images/img2.JPG"]
+        "images": ["images/lf/slide1.PNG"]
     }, {
         "title": "Microcontroller controlled robot",
         "dates": "September 2009",
@@ -74,7 +76,7 @@ var projects = {
             "certain defined path or could be controlled remotely through wireless controls. Attached sensors helped the " +
             "car to turn if a hurdle was found in it's path and to continue turning until a clear path was found for further " +
             "movement. A part of Introduction to microcontroller and advanced robotics Workshop conducted by Crux.",
-        "images": ["images/img2.JPG", "images/img3.JPG"]
+        "images": ["images/slide1.JPG", "images/slide2.JPG", "images/slide3.JPG"]
     }, {
         "title": "Anthropoid",
         "dates": "July 2010",
@@ -83,7 +85,7 @@ var projects = {
             "remote control. Used micro controllers, timing circuits, led indicators, wireless transmission and reception " +
             "circuits and, stepper motors attached to the body of the robot for building the project. Minor Project - " +
             "Bachelor Of Engineering - LNCT Indore",
-        "images": ["images/img1.JPG", "images/img2.JPG", "images/img3.JPG"]
+        "images": ["images/anthro/slide1.PNG", "images/anthro/slide2.PNG", "images/anthro/slide3.PNG"]
     }, {
         "title": "Voice Controlled Robot",
         "dates": "November 2011",
@@ -92,19 +94,19 @@ var projects = {
             "commands. Incorporated sensors in the circuit to help program the car to turn in case of any obstacle in it's" +
             "path. Car could be voice controlled for following movement directions - left, right, forward, back, stop and" +
             "circle. Major Project - Bachelor of Engineering - LNCT,Indore",
-        "images": ["images/img3.JPG"]
+        "images": ["images/slide1.JPG", "images/slide2.JPG", "images/slide3.JPG"]
     }, {
         "title": "Chat Application",
         "dates": "December 2012",
         "description": "Built a simple chat program using Java Socket Programming A part of course work at NIIT",
-        "images": ["images/img3.JPG", "images/img2.JPG"]
+        "images": ["images/slide1.JPG", "images/slide2.JPG", "images/slide3.JPG"]
     }, {
         "title": "Portfolio Mockup to HTML",
         "dates": "September 2015",
         "description": "Developed a personal portfolio page using HTML, CSS, and the Bootstrap framework. The page is fully " +
             "responsive and works on mobile, tablet, and desktop browsers. A part of the Front-End Web Developer " +
             "Nanodegree - Udacity",
-        "images": ["images/img3.JPG", "images/img2.JPG"]
+        "images": ["images/slide1.JPG", "images/slide2.JPG", "images/slide3.JPG"]
     }]
 };
 
@@ -115,7 +117,7 @@ var bio = {
     "role": "Application Developer",
     "welcomeMessage": "I am a blah blah blah ..",
     "bioPic": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/005/059/127/13a0ed4.jpg",
-    "skills": ["Problem-Solving", "Analytical", "Object-Oriented-Programming", "Team-Work"],
+    "skills": ["Java development","Web programming", "PL/SQL programming","Middleware and integration software", "Critical thinking and Analytical skills", "Communication and Interpersonal skills" ],
     "contacts": {
         "mobile": "+91-9886140004",
         "email": "jayati.burman@gmail.com",
@@ -212,11 +214,6 @@ var education = {
         "url": "http://www.ibm.com/in-en/"
     }],
     "onlineCourses": [{
-        "title": "Algorithms Part I",
-        "school": "Princeton University",
-        "dates": "Currently Pursuing",
-        "url": "https://class.coursera.org/algs4partI-009"
-    }, {
         "title": "Front-End Web Developer Nanodegree",
         "school": "Udacity",
         "dates": "Currently Pursuing",
@@ -322,7 +319,7 @@ projects.display = function() {
             $('.project-entry:last').append(HTMLprojectImageStart);
             for (var image = 0, len1 = projects.projectList[project].images.length; image < len1; image++) {
                 var newHTMLprojectImage = HTMLprojectImage.replace(app.data, projects.projectList[project].images[image]);
-                $('.img-div:last').append(newHTMLprojectImage);
+                $('.nivoSlider:last').append(newHTMLprojectImage);
             }
         }
     }
