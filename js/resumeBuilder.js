@@ -76,7 +76,7 @@ var projects = {
             "certain defined path or could be controlled remotely through wireless controls. Attached sensors helped the " +
             "car to turn if a hurdle was found in it's path and to continue turning until a clear path was found for further " +
             "movement. A part of Introduction to microcontroller and advanced robotics Workshop conducted by Crux.",
-        "images": ["images/slide1.JPG", "images/slide2.JPG", "images/slide3.JPG"]
+        "images": ""
     }, {
         "title": "Anthropoid",
         "dates": "July 2010",
@@ -85,7 +85,7 @@ var projects = {
             "remote control. Used micro controllers, timing circuits, led indicators, wireless transmission and reception " +
             "circuits and, stepper motors attached to the body of the robot for building the project. Minor Project - " +
             "Bachelor Of Engineering - LNCT Indore",
-        "images": ["images/anthro/slide1.PNG", "images/anthro/slide2.PNG", "images/anthro/slide3.PNG"]
+        "images": ""
     }, {
         "title": "Voice Controlled Robot",
         "dates": "November 2011",
@@ -94,19 +94,19 @@ var projects = {
             "commands. Incorporated sensors in the circuit to help program the car to turn in case of any obstacle in it's" +
             "path. Car could be voice controlled for following movement directions - left, right, forward, back, stop and" +
             "circle. Major Project - Bachelor of Engineering - LNCT,Indore",
-        "images": ["images/slide1.JPG", "images/slide2.JPG", "images/slide3.JPG"]
+        "images": ""
     }, {
         "title": "Chat Application",
         "dates": "December 2012",
         "description": "Built a simple chat program using Java Socket Programming A part of course work at NIIT",
-        "images": ["images/slide1.JPG", "images/slide2.JPG", "images/slide3.JPG"]
+        "images": ""
     }, {
         "title": "Portfolio Mockup to HTML",
         "dates": "September 2015",
         "description": "Developed a personal portfolio page using HTML, CSS, and the Bootstrap framework. The page is fully " +
             "responsive and works on mobile, tablet, and desktop browsers. A part of the Front-End Web Developer " +
             "Nanodegree - Udacity",
-        "images": ["images/slide1.JPG", "images/slide2.JPG", "images/slide3.JPG"]
+        "images": ""
     }]
 };
 
