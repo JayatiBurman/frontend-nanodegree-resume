@@ -68,7 +68,7 @@ var projects = {
         "description": "Built an autonomous robotic car which could follow a black line in a white background (or vice versa ) and " +
             "would take right turn wherever cross overs arrived. Used electronic decision making circuit along with " +
             "sensors array for deciding the direction of motion. A part of basic electronics workshop conducted by Crux.",
-        "images": ["images/lf/slide1.PNG"]
+        "images": ""
     }, {
         "title": "Microcontroller controlled robot",
         "dates": "September 2009",
@@ -89,7 +89,7 @@ var projects = {
     }, {
         "title": "Voice Controlled Robot",
         "dates": "November 2011",
-        "description": "Built a voice controlled robotic car with a voice recognition accuracy of 75% within a range of 300m. Used a " +
+        "description": "Built a voice controlled robotic car with a voice recognition accuracy of 85% within a range of 30m. Used a " +
             "micro controller based decision circuit to control the movement of the car using wirelessly transmitted voice " +
             "commands. Incorporated sensors in the circuit to help program the car to turn in case of any obstacle in it's" +
             "path. Car could be voice controlled for following movement directions - left, right, forward, back, stop and" +
@@ -125,7 +125,7 @@ var bio = {
         "gitpic": "https://cdn4.iconfinder.com/data/icons/azure-blue-icons/128/github_code.png",
         "linkedIn": "https://in.linkedin.com/pub/jayati-burman/5b/62a/4b9",
         "linkedpic": "http://icons.iconarchive.com/icons/position-relative/social-1/128/linkedin-icon.png",
-        "fb": "#",
+        "fb": "https://www.facebook.com/jayati.burman",
         "fbpic": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADMCAMAAAAI/LzAAAAAaVBMVEVKbqn///9Faqfx9PhHbKh6lL9phrXf5e9dfLA4YqPm6vHn6/NxjLqzv9c/Z6U9ZaXQ1+VUdq2Em8O/y966xtva4OvH0OD4+fvt8PZXeK5wi7pmg7Wjs88yXqGaq8tOcquer86BmL+LocXkOXxWAAAC4ElEQVR4nO3c23KiQBSFYWi3ERUbiIIoGhLe/yHHmUlSFQ4d2qJqL6j1VS694K/dRA6dBFFAREREREREREREAIyImAf5FIj2ET1FjE2S7CWO15/ih+pSJ9vEmlklSbINmluab/blD7tNnufpsVnPpsYE9fWwD132V6N9lKPYbH0onSX/YuYwGls36fm3lEdMjB8j9jUfkTKLGJOlY0rCGZwzUjerkS3hpsKejNSnUSvsf0wEHSMydon9lV+QY0y08WgJ80z7gB2kyn1awrxGnkzh1QIdsz34tYQp7m9ms/ZsCVOrfcxDTPTrtVgnJtE+6AES+C4y4BgTew8GNkaCk3dLmG61D7ufqcZfxcDH2Jt/S1iALrP7E4NBjTHNEy2oMclxQTH1bjkxMuJLpiyOPxTF8RXy2sy+u8//ze1y3yYdkC2BdX5jnm+1xb3Wb5PAdf6f30C/G/tJ5LrzP83rmb/zdrmMMU+NIVI5nmOkyE8tesiLI+YEezvZzxlzW1DM6mNep4w7Zs0YPYxBxRhUjEHFGFSMQcUYVIxBxRhUc46RNuN41PSI6Xz+e0ewPlNHbR/DLwFWzaXz8S+Zeo5Uxa7N9UKj7Hz6W/qiXSOxe3+vh1J9j6ZcJ4vR33A64WQYAxujvhV4whj93bMTxuhvOJ0yRn2P5oQx+tsap4xR36ExZYz6O3VOpp/+RqAJY46LilnSb7P3BcWcG+1Lsylj9DfPMYYxjPGMmeyBxln9rnnKyajfmwVBduw+BHTsBB5+CKh/O/Ngty33anjD+Sq+tz/+Rf3KrNec3wJ0MAYVY1AxBhVjUDEGFWNQMQYVY1AxBhVjUDEGFWNQMQYVY1AxBhVjUDEGFWNQMQYVY1AxBpVZUsyiJrOoGC4zVJwMKk4G1aJiuMxQcTKoOBlUi4rhMkPFyaDiZFAtKobLDJUzRv8vS/1I9nYYclP/Rzm+xCTWDvzMrYWIiIiIiIiIiGj2/gB88EHWY0fmuAAAAABJRU5ErkJggg==",
         "location": "Bangalore, India"
     }
