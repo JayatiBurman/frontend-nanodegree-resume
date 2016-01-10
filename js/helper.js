@@ -20,8 +20,8 @@ var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<div class="flex-item"><span><a href="#">%data%';
-var HTMLworkTitle = ' - %data%</a></span>';
+var HTMLworkEmployer = '<div class="flex-item"><span><p id ="a">%data%';
+var HTMLworkTitle = ' - %data%</p></span>';
 var HTMLworkIcon = '<span><img class="workicon" src="%data%" alt ="IBM logo"></span></div>';
 var HTMLworkClient = '<div class="flex-item"><span>Client :</span>';
 var HTMLworkClientIcon = '<span><img class="workicon" src="%data%" alt ="ATT logo"></span></div>';
@@ -32,23 +32,23 @@ var HTMLrolesStart = '<div class="roles"><span>Roles and Responsibilities</span>
 var HTMLtechStart = '<div class="tech"><span>Technical Skills</span><ul id="techList"></ul></div>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<a href="#">%data%</a>';
+var HTMLprojectTitle = '<p id ="a">%data%</p>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImageStart = '<div class="slider-wrapper futurico-theme"><div id="slider" class="nivoSlider"></div></div>';
 var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = ' -- %data%</a>';
+var HTMLschoolName = '<p id ="a">%data%';
+var HTMLschoolDegree = ' -- %data%</p>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineStart = '<div class="education-entry"></div>';
-var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineSchool = ' - %data%</a>';
+var HTMLonlineTitle = '<p id ="a">%data%';
+var HTMLonlineSchool = ' - %data%</p>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<br><a href="%link%" target="_blank">%data%</a>';
 
